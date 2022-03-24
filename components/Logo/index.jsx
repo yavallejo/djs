@@ -8,9 +8,9 @@ const Logo = () => {
             <a>
                 <Image
                     src={LogoImage}
-                    alt="Linkedin"
-                    width={504}
-                    height={128}
+                    alt="Logo Djs"
+                    width={272}
+                    height={126}
                 />
             </a>
         </Link>

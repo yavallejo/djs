@@ -7,71 +7,21 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          red: '#D43548',
-          blue: '#0D1334',
-          light: '#E6F4F2'
+          dark: '#060f20',
+          red: '#fd275f',
+          blue: '#53c7f0'
         },
-        secondary: '#F7F2DC',
-        gray: {
-          900: '#22252A',
-          800: '#464652',
-          700: '#5F5F6A',
-          600: '#787882',
-          500: '#91919A',
-          400: '#AAAAB2',
-          300: '#C3C3CA',
-          200: '#DCDCE2',
-          100: '#F5F6FA',
+        tickets: {
+          dark: '#24243c',
+          red: '#e35a78',
+          pink: '#e25abc',
+          violet: '#7e5ae2'
         }
       },
       fontFamily: {
-        montserrat: 'Montserrat',
-        roboto: 'Roboto Condensed',
-      },
-      fontSize: {
-        'base': '16px',
-        'caption': ['1.125rem', {
-          lineHeight: '1.688rem'
-        }],
-        'overline': ['0.875rem', {
-          letterSpacing: '0.1em',
-          lineHeight: '1rem',
-        }],
-        'button': ['0.875rem', {
-          letterSpacing: '0.1em',
-          lineHeight: '1rem',
-        }],
-        'lead': ['1.25rem', {
-          lineHeight: '2rem',
-        }],
-        'body': ['0.875rem', {
-          lineHeight: '1.25rem',
-        }],
-        'title1': ['4rem', {
-          letterSpacing: '-0.02em',
-          lineHeight: '4rem',
-        }],
-        'title2': ['3rem', {
-          letterSpacing: '-0.02em',
-          lineHeight: '3.625rem',
-        }],
-        'title3': ['36px', {
-          letterSpacing: '-0.02em',
-          lineHeight: '2.25rem',
-        }],
-        'title4': ['1.5rem', {
-          letterSpacing: '-0.02em',
-          lineHeight: '2.125rem',
-        }],
-        'title5': ['1.125rem', {
-          letterSpacing: '-0.02em',
-          lineHeight: '1.563',
-        }],
-        'title6': ['1rem', {
-          letterSpacing: '-0.02em',
-          lineHeight: '1.375rem',
-        }],
-      },
+        kanit: 'Kanit',
+        saira: 'Saira',
+      }
     }
   },
   plugins: [

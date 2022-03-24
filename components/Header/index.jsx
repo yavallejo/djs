@@ -1,19 +1,22 @@
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Navigation from "../Navigation";
 import Logo from "../Logo";
 
 export default function Header() {
+    const router = useRouter();
+    let headerBG = "";
+    if (router.pathname === "/") {
+        headerBG = "header__home";
+    } else {
+        headerBG = "header__inside";
+    }
     return (
-        <header className="header">
+        <header className={`header ${headerBG}`}>
             <div className="header__logo">
                 <Logo />
             </div>
             <Navigation />
-            <div className="header__contact">
-                <Link href="#">
-                    <a className="btn btn--primary">Contact</a>
-                </Link>
-            </div>
         </header>
     );
 }

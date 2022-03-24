@@ -1,17 +1,18 @@
 .header {
     @apply flex justify-between items-center pt-12 container mx-auto px-4 lg:px-0;
     &__logo {
-        @apply max-w-[252px];
-    }
-    &__contact {
+        @apply max-w-[272px];
     }
     .navigation {
-        @apply border border-primary-red border-solid rounded-md max-w-[519px] w-full h-[64px];
+        @apply max-w-[777px] w-full;
         ul {
-            @apply flex items-center justify-center h-full gap-9;
+            @apply flex items-center justify-center h-full gap-[61px];
             li {
                 a {
-                    @apply text-title5;
+                    @apply font-saira font-bold uppercase text-xl;
+                    &.active {
+                        @apply text-primary-red;
+                    }
                 }
             }
         }

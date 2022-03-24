@@ -7,7 +7,7 @@
 @layer base {
     html,
     body {
-        @apply font-montserrat text-gray-900 font-normal text-body;
+        @apply font-kanit text-gray-900 font-normal;
     }
     a {
         @apply hover:text-primary-red transition-colors ease-in-out delay-150;
@@ -16,9 +16,9 @@
 
 @layer components {
     .btn {
-        @apply font-bold py-7 px-[68px] rounded text-button;
+        @apply font-bold py-7 px-[68px] rounded;
         &--primary {
-            @apply bg-primary-red hover:bg-secondary text-white hover:text-primary-red hover:shadow;
+            @apply bg-primary-red hover:bg-primary-blue text-white hover:text-primary-red hover:shadow;
         }
     }
 }
