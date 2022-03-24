@@ -1,7 +1,28 @@
 .header {
-    @apply flex justify-between items-center pt-12 container mx-auto px-4 lg:px-0;
+    @apply pt-12;
+    &__bottom {
+        @apply mt-16;
+    }
+    &__box {
+        @apply px-4 container mx-auto lg:px-0;
+    }
+    &__top {
+        @apply flex justify-between items-center;
+    }
     &__logo {
         @apply max-w-[272px];
+    }
+    &__home {
+        @apply bg-red-400 text-white bg-hero-home min-h-[998px] bg-cover;
+    }
+    &__menuSecondary {
+        @apply flex items-center gap-11 font-kanit text-lg;
+        li {
+            @apply flex items-center gap-2;
+            figure {
+                @apply max-w-[20px] max-h-[20px];
+            }
+        }
     }
     .navigation {
         @apply max-w-[777px] w-full;

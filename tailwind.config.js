@@ -21,6 +21,9 @@ module.exports = {
       fontFamily: {
         kanit: 'Kanit',
         saira: 'Saira',
+      },
+      backgroundImage: {
+        'hero-home': "url('/images/bg-home.jpg')",
       }
     }
   },
