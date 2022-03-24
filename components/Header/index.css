@@ -1,0 +1,19 @@
+.header {
+    @apply flex justify-between items-center pt-12 container mx-auto px-4 lg:px-0;
+    &__logo {
+        @apply max-w-[252px];
+    }
+    &__contact {
+    }
+    .navigation {
+        @apply border border-primary-red border-solid rounded-md max-w-[519px] w-full h-[64px];
+        ul {
+            @apply flex items-center justify-center h-full gap-9;
+            li {
+                a {
+                    @apply text-title5;
+                }
+            }
+        }
+    }
+}
