@@ -27,43 +27,46 @@ export default function Header() {
                     </div>
                     <Navigation />
                 </div>
-                <div className="header__bottom">
-                    <ul className="header__menuSecondary">
-                        <li>
-                            <figure>
-                                <Image
-                                    src={iconDate}
-                                    alt="Icon Djs"
-                                    width={40}
-                                    height={40}
-                                />
-                            </figure>
-                            <span className="uppercase">21 Sept 2018</span>
-                        </li>
-                        <li>
-                            <figure>
-                                <Image
-                                    src={iconDjs}
-                                    alt="Icon Date"
-                                    width={40}
-                                    height={40}
-                                />
-                            </figure>
-                            <span className="uppercase">24 Djs</span>
-                        </li>
-                        <li>
-                            <figure>
-                                <Image
-                                    src={iconTicket}
-                                    alt="Icon Tickets"
-                                    width={40}
-                                    height={40}
-                                />
-                            </figure>
-                            <span className="uppercase">21 Sept 2018</span>
-                        </li>
-                    </ul>
-                </div>
+                {router.pathname === "/" && (
+                    <div className="header__bottom">
+                        <ul className="header__menuSecondary">
+                            <li>
+                                <figure>
+                                    <Image
+                                        src={iconDate}
+                                        alt="Icon Djs"
+                                        width={40}
+                                        height={40}
+                                    />
+                                </figure>
+                                <span className="uppercase">21 Sept 2018</span>
+                            </li>
+                            <li>
+                                <figure>
+                                    <Image
+                                        src={iconDjs}
+                                        alt="Icon Date"
+                                        width={40}
+                                        height={40}
+                                    />
+                                </figure>
+                                <span className="uppercase">24 Djs</span>
+                            </li>
+                            <li>
+                                <figure>
+                                    <Image
+                                        src={iconTicket}
+                                        alt="Icon Tickets"
+                                        width={40}
+                                        height={40}
+                                    />
+                                </figure>
+                                <span className="uppercase">21 Sept 2018</span>
+                            </li>
+                        </ul>
+                    </div>
+                )}
+                {/* Validate if we are in the home and show the information */}
             </div>
         </header>
     );

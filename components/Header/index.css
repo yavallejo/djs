@@ -12,8 +12,15 @@
     &__logo {
         @apply max-w-[272px];
     }
+    &__home,
+    &__inside {
+        @apply bg-cover text-white;
+    }
     &__home {
-        @apply bg-red-400 text-white bg-hero-home min-h-[998px] bg-cover;
+        @apply bg-hero-home min-h-[998px];
+    }
+    &__inside {
+        @apply bg-hero-inside min-h-[596px];
     }
     &__menuSecondary {
         @apply flex items-center gap-11 font-kanit text-lg;
@@ -30,7 +37,7 @@
             @apply flex items-center justify-center h-full gap-[61px];
             li {
                 a {
-                    @apply font-saira font-bold uppercase text-xl;
+                    @apply font-saira font-bold uppercase text-xl text-white;
                     &.active {
                         @apply text-primary-red;
                     }
